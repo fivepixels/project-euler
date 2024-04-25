@@ -1,0 +1,50 @@
+{
+  "name": "project-euler",
+  "description": "project euler",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/fivepixels/project-euler",
+  "keywords": [
+    "project euler",
+    "math"
+  ],
+  "author": {
+    "name": "Seol SO",
+    "url": "https://fivepixels.dev",
+    "email": "hi@fivepixels.dev"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/fivepixels"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fivepixels/project-euler"
+  },
+  "bugs": {
+    "url": "https://github.com/fivepixels/project-euler/issues/new",
+    "email": "hi@fivepixels.dev"
+  },
+  "scripts": {
+    "test": "bun test",
+    "check": "bunx @biomejs/biome check --apply problems test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.0",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "nodemonConfig": {
+    "exec": "bun run build && bun run test",
+    "watch": [
+      "src",
+      "test"
+    ],
+    "ext": "ts"
+  }
+}
